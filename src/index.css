@@ -1,0 +1,50 @@
+/* instead of normalize my css I've just change the main needed styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.autocomplete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.autocomplete__title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.autocomplete__searchInput {
+  width: 300px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #0d0e00;
+  margin: 16px 0;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.autocomplete__results {
+  width: 300px;
+  border-radius: 4px;
+  border: 1px solid #0d0e00;
+  max-height: 510px;
+  overflow: auto;
+}
+
+.autocomplete__results__item {
+  border-bottom: 1px solid #0d0e00;
+  text-align: center;
+  padding: 4px;
+}
+
+.autocomplete__results__item:last-of-type {
+  border-bottom: none;
+}
